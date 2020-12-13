@@ -1,5 +1,9 @@
 <h1>Olá</h1>
 
-  <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+  <button class="btn waves-effect waves-light" type="submit" name="action">
+    <%= link_to 'Gerar', search_initial_index_path, method: :get, remote: true %>
     <i class="material-icons right">local_dining</i>
   </button>
+
+  <div class="resultado"></div>
+
