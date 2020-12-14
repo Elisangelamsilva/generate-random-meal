@@ -1,0 +1,18 @@
+var resultado = document.querySelector(".resultado")
+var img = "https://www.joblo.com/assets/images/joblo/database-specific-img-225x333.jpg"
+
+  var html =`
+      <div>
+        <img src="<%= @meal_resul['strMealThumb']%>" alt="<%= @meal_resul['strMeal']%>" style="width:30%">
+
+        <p>Category: <%= @meal_resul['strCategory']%></p>
+        <p>Area: <%= @meal_resul['strArea']%></p>
+        <p>Tags: <%= @meal_resul['strTags']%></p>
+      </div>
+
+      <div>
+        <h3><%= @meal_resul['strMeal']%></h3>
+        <p><%= @meal_resul['strInstructions']%></p>
+      </div>
+  `
+resultado.innerHTML = html
