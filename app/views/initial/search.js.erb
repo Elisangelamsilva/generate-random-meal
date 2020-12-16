@@ -1,6 +1,16 @@
 var resultado = document.querySelector(".resultado")
 var img = "https://www.joblo.com/assets/images/joblo/database-specific-img-225x333.jpg"
 
+var igredients = [] 
+<% for i in 1..20 %>
+  <% if @meal_resul["strIngredient#{i}"].present? %>
+    igredients.push("<%= @meal_resul["strIngredient#{i}"] %>")
+  <% else %>
+    <%break%>
+  <% end %>
+<% end %>
+console.log(igredients)
+
   var html =`
       <div>
         <img src="<%= @meal_resul['strMealThumb']%>" alt="<%= @meal_resul['strMeal']%>" style="width:30%">
