@@ -1,24 +1,13 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Generate a random meal from an API.
 
-Things you may want to cover:
+## User Stories
 
-* Ruby version
+- [x] User can click a button that will get a random meal from an external API (see below)
+- [x] The app should display: **Recipe name**, **Ingredients**, **Instructions** and a **Picture** of the meal
+- [x] By clicking the button again, another meal will be generated
 
-* System dependencies
+## Bonus features
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- [x] The app should display a **YouTube Video**
